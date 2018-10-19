@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:shape="rectangle">
+    <!--  gradient means inner color -->
+    <gradient
+        android:angle="90"
+        android:endColor="#424242"
+        android:startColor="#424242" />
+    <!-- stroke means border width and color -->
+    <stroke
+        android:width="1dp"
+        android:color="#011c2e" />
+    <!--corner means corner radiour-->
+    <corners android:radius="15dp" />
+</shape>

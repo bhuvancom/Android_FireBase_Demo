@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Login Page</string>
+    <string name="user_name">  ENTER USER NAME HERE</string>
+    <string name="user_pass">  ENTER PASSWORD HERE</string>
+    <string name="user_email">  ENTER EMAIL HERE</string>
+    <string name="user_mobile">  ENTER MOBILE NUMBER HERE</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="new_user_register">New User ? Register</string>
+    <string name="no_of_attempt_remaining_5">No of attempt remaining : 5</string>
+    <string name="log_in">Log In</string>
+    <string name="logo_of_org">LOGO OF ORG.</string>
+    <string name="enter_email_to_reset_password">Enter Email To Reset Password</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">cancel</string>
+</resources>

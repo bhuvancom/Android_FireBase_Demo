@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#382d2d"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/logo_of_org"
+        app:srcCompat="@drawable/logo500p1" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/md_et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogo"
+        android:layout_marginTop="10dp"
+        app:counterEnabled="true"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_user"
+            android:fontFamily="@font/cairo"
+            android:hint="@string/user_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#878586"
+            android:textSize="20sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/md_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/md_et_user"
+        app:counterEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawableStart="@drawable/ic_lock"
+            android:fontFamily="@font/cairo"
+            android:hint="@string/user_pass"
+            android:imeActionLabel="Hello"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/md_et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:text="@string/log_in"
+        android:textColor="#149781"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_attempt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/no_of_attempt_remaining_5"
+        android:textColor="#a30f19"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_forget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/new_user_register"
+        android:textColor="#149781"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_attempt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/forget_password"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

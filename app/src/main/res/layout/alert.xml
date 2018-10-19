@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_forget_email"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enter_email_to_reset_password"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_email_to_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:hint="@string/user_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColor="#ffffff"
+        android:textColorHint="#878586" />
+
+    <Button
+        android:id="@+id/btn_reset_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email_to_reset"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn_reset_cancel"
+        android:background="@drawable/rounded_corner"
+        android:text="@string/reset"
+        android:textColor="#149781" />
+
+    <Button
+        android:id="@+id/btn_reset_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email_to_reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner"
+        android:text="@string/cancel"
+        android:textColor="#149781" />
+</RelativeLayout>

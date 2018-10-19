@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".Registeration_Activity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Registration"
+        android:textColor="#149781"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_user_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_call"
+        android:tooltipText="select image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:text="select image"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/et_User_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_user_img"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_user"
+        android:hint="@string/user_name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:id="@+id/et_user_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_User_name"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:hint="@string/user_pass"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:id="@+id/et_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_user_pass"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="@string/user_email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:id="@+id/et_user_mob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_user_email"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_call"
+        android:hint="@string/user_mobile"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_user_mob"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#149781"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="Already Registered ? Login"
+        android:textColor="#149781"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>
